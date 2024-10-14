@@ -1,3 +1,4 @@
+import 'package:adpative_dashboard_flutter/widgets/custom_drawer.dart';
 import 'package:flutter/cupertino.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
@@ -5,6 +6,13 @@ class DashboardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row();
+    return Row(
+      children: [
+        Expanded(
+          child: CustomDrawer(),
+        ),
+
+      ],
+    );
   }
 }
